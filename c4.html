@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>кликни ме!</button>
+    <input type="text" class="ime"/>
+    <hr/>
+    <input type="text" class="a">
+    +
+    <input type="text" class="b">
+    <button class="calc">=</button>
+    <input type="text" class="res">
+    <script>
+        var btn = document.querySelector('button');
+        console.log(btn);
+        var ime = document.querySelector('.ime');
+        console.log(ime);
+        btn.addEventListener('click', function(){
+            alert('Здраво ' + ime.value);
+            ime.value = '';
+        });
+
+        //  **********************************************
+        //  **********************************************
+        //  **********************************************
+
+        var a = document.querySelector('.a');
+        var b = document.querySelector('.b');
+        var res = document.querySelector('.res');
+        var calc = document.querySelector('.calc');
+
+        calc.addEventListener('click', function(){
+            res.value = (a.value) + parseInt(b.value);
+        });
+    </script>
+</body>
+</html>

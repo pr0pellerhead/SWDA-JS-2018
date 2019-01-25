@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tretParen(s, f) {   // novo
+            var b = 0; 
+            for(var i = s; i < f; i++){ // modificirano
+                if(i % 2 == 0){
+                    b++;
+                    if(b == 3){
+                        console.log(i);
+                        b = 0;
+                    }
+                }
+            }
+        } // novo
+
+        tretParen(22, 178);
+        tretParen(1003, 10234);
+    </script>
+</body>
+</html>
