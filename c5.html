@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .img-list {
+            list-style: none;
+        }
+
+            .img-list li {
+                float: left;
+                padding: 10px;
+            }
+        
+        .modal {
+            width: 300px;
+            height: 300px;
+            border-radius: 3px;
+            box-shadow: 0 0 70px rgba(0, 0, 0, .2);
+            background-color: #fff;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input class="a" />
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+    </select>
+    <input class="b" />
+    <button class="calc">=</button>
+    <input class="res" />
+
+    <hr/>
+
+    <input class="t"/>
+    <select class="func">
+        <option value="f2c">Fahrenheit to Celsius</option>
+        <option value="c2f">Celsius to Fahrenheit</option>
+    </select>
+    <button class="conv">Convert</button>
+    <input class="cv"/>
+
+    <hr/>
+
+    
+    <ul class="img-list">
+        <li>
+            <img src="https://via.placeholder.com/150.png/blue/fff">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150.png/000/fff">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150.png/ddd/red">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150.png/444/fff">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150.png/777/fff">
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150.png/999/fff">
+        </li>
+    </ul>
+    <div class="modal">
+        <img src="">
+    </div>
+    <script src="c5.js"></script>
+</body>
+</html>
