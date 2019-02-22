@@ -64,4 +64,19 @@ body.addEventListener('click', function(){
 
 modal.addEventListener('click', function(event){
     // event.stopPropagation();
-})
+});
+
+
+
+for(var j = 0; j < 1000; j++){
+    console.log('test');
+    console.log(j);
+}
+
+var niza = ['janko', 'petko', 'stanko'];
+// console.log(niza.length);
+
+for(var i = 0; i < niza.length; i++){
+    // console.log(i);
+    console.log(niza[i]);
+}
